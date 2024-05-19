@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-prnl0m2^pndt&l*p++l(a2*vbd#*xg-jn0p_+4_!d)l733cu96'
+SECRET_KEY = 'django-insecure-c=ib01eymlw9#h7%!c4t6%(&xq=92t9u4q1k6i76o0(1yx5kr9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,7 +37,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'schedule_app'
+    "classes",
+    "teachers",
+    "grades",
+    "subjects",
+    "schedule",
+    "student"
 ]
 
 MIDDLEWARE = [
@@ -50,7 +55,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'school_schedule.urls'
+ROOT_URLCONF = 'urls'
 
 TEMPLATES = [
     {
@@ -68,7 +73,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'school_schedule.wsgi.application'
+WSGI_APPLICATION = 'wsgi.application'
 
 
 # Database
